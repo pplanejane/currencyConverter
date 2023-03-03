@@ -60,12 +60,12 @@ firstSelect.addEventListener("input", () => {
 })
 
 secondSelect.addEventListener("input", () => {
-    fetch(`https://api.apilayer.com/exchangerates_data/convert?apikey=${aKey}&to=${firstSelect.value}&from=${secondSelect.value}&amount=${secondInput.value}`)
+    fetch(`https://api.apilayer.com/exchangerates_data/convert?apikey=${aKey}&to=${secondSelect.value}&from=${firstSelect.value}&amount=${firstInput.value}`)
   .then((response) => {
     return response.json();
   })
   .then((data) => {
-    firstInput.value = (data.result).toFixed(2)
+    secondInput.value = (data.result).toFixed(2)
   })
 })
 
