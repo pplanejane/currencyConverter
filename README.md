@@ -1,3 +1,5 @@
+# This is Currency Converter Webapp
+
 This is a simple currency converter that implements a request for a free api 
 and outputs this information to the page. The interaction with the user is worked out, 
 when he enters data into inputs he immediately gets a response based on the information 
